@@ -11872,3 +11872,32 @@ JavaScript error: , line 0: uncaught exception: undefined
 JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
 JavaScript error: https://www.elespectador.com/ciencia/comportamiento-del-volcan-del-ruiz-sigue-siendo-inestable-actividad-se-monitorea/ line 1 > injectedScript, line 1: SyntaxError: redeclaration of const unblockiaScript
 JavaScript error: https://www.elespectador.com/ciencia/comportamiento-del-volcan-del-ruiz-sigue-siendo-inestable-actividad-se-monitorea/ line 1 > injectedScript, line 1: SyntaxError: redeclaration of const unblockiaScript
+JavaScript error: https://sync.richaudience.com/DF2886F390D432DF0C8E98D69702ED6F/, line 1: SyntaxError: redeclaration of let raSyncIframe
+JavaScript error: https://sync.richaudience.com/DF2886F390D432DF0C8E98D69702ED6F/, line 1: SyntaxError: redeclaration of let raSyncIframe
+JavaScript error: https://sync.richaudience.com/DF2886F390D432DF0C8E98D69702ED6F/, line 1: SyntaxError: redeclaration of let raSyncIframe
+JavaScript error: , line 0: uncaught exception: undefined
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: https://www.elespectador.com/ambiente/es-posible-que-la-salida-de-ceniza-del-volcan-nevado-del-ruiz-disminuya-sgc-noticias-hoy/ line 1 > injectedScript, line 1: SyntaxError: redeclaration of const unblockiaScript
+JavaScript error: https://www.elespectador.com/ambiente/es-posible-que-la-salida-de-ceniza-del-volcan-nevado-del-ruiz-disminuya-sgc-noticias-hoy/ line 1 > injectedScript, line 1: SyntaxError: redeclaration of const unblockiaScript
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 599))
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Child 17968, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 17968, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 17968, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 17968, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 17968, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 17968, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 17968, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 17968, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1684948491603	Marionette	INFO	Stopped listening on port 65268
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
