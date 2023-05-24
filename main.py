@@ -1,8 +1,6 @@
-import tkinter as tk
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.firefox.options import Options
-import time
 from subprocess import CREATE_NO_WINDOW
 from openpyxl import Workbook
 global driver
@@ -14,7 +12,6 @@ service.creationflags = CREATE_NO_WINDOW
 opts = Options()
 opts.binary_location = 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'
 opts.set_preference("browser.helperApps.neverAsk.saveToDisk", "text/csv")
-
 
 def eltiempo():
     with open('./links_el_tiempo.txt', 'w') as f:
@@ -150,25 +147,13 @@ def elespectador():
         except Exception as e:
             print(f"Se produjo una excepción: {e}")
     wb.save('el_espectador.xlsx')
-
-
 try:
     driver = webdriver.Firefox(service=service, options=opts)
-    dri = 1
+    eltiempo()
+    semana()
+    elespectador()
+    driver.quit()
 except Exception:
     e = sys.exc_info()[1]
-    errorText = e.args[0]
-    ventanaError = tk.Tk()
-    ventanaError.title("error")
-    ventanaError.geometry("700x100+300+300")
-    ventanaError.resizable(0,0)
-    error = tk.Label(ventanaError, text=errorText)
-    error.place(x="20",y="20")
-    ventanaError.mainloop()
-    dri = 0
-if dri == 1:
-    eltiempo()
-    driver.quit()
-
-
+    print(e)
 
