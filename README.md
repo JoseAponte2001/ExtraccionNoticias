@@ -1,6 +1,8 @@
 # ExtraccionNoticias
 En este programa se hace la extracción de noticias de periodicos digitales Colombianos usando al librería Selenium.
 
+Se utilizó PyCharm
+
 ## Scrapy de Noticias
 Se necesita intalar la versión Python 3.10
 
