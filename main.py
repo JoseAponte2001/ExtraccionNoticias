@@ -4,10 +4,12 @@ from selenium.webdriver.firefox.options import Options
 from subprocess import CREATE_NO_WINDOW
 from openpyxl import Workbook
 global driver
+import time
+import os
 
 import sys
 print("Python Version: " + str(sys.version_info))
-service = Service('C:\\driver\\geckodriver.exe')
+service = Service()
 service.creationflags = CREATE_NO_WINDOW
 opts = Options()
 opts.binary_location = 'C:\\Program Files\\Mozilla Firefox\\firefox.exe'
@@ -25,7 +27,7 @@ def eltiempo():
     archivo = open('./links_el_tiempo.txt', 'r')
     wb = Workbook()
     hoja_activa = wb.active
-    fila = 1
+    fila = 2
     for link in archivo:
         try:
             driver.get(link)
@@ -69,7 +71,7 @@ def semana():
     ver_mas = driver.find_element("xpath", "//h1[contains(text(), 'Ver más')]")
     for i in range(1, 16):
         ver_mas.location_once_scrolled_into_view
-        driver.execute_script("window.scrollBy(0, -150)")
+        driver.execute_script("window.scrollBy(0, -60)")
         ver_mas.click()
     elements = driver.find_elements("xpath",'//a[h2[@class="card-title h3"]]')
     for element in elements:
@@ -79,7 +81,7 @@ def semana():
     archivo = open('./links_semana.txt', 'r')
     wb = Workbook()
     hoja_activa = wb.active
-    fila = 1
+    fila = 2
     for link in archivo:
         try:
             driver.get(link)
@@ -116,7 +118,7 @@ def elespectador():
     ver_mas = driver.find_element("xpath", "//div[contains(text(), 'Cargar más notas')]")
     for i in range(1, 10):
         ver_mas.location_once_scrolled_into_view
-        driver.execute_script("window.scrollBy(0, -50)")
+        driver.execute_script("window.scrollBy(0, -60)")
         ver_mas.click()
     elements = driver.find_elements("xpath", '//div[@class="Card-Container"]//h2//a')
     for element in elements:
@@ -126,7 +128,7 @@ def elespectador():
     archivo = open('./links_el_espectador.txt', 'r')
     wb = Workbook()
     hoja_activa = wb.active
-    fila = 1
+    fila = 2
     for link in archivo:
         try:
             driver.get(link)
@@ -149,8 +151,15 @@ def elespectador():
     wb.save('el_espectador.xlsx')
 try:
     driver = webdriver.Firefox(service=service, options=opts)
-    eltiempo()
-    semana()
+
+    extension_path = os.path.abspath("extension/adblock.xpi")
+    driver.install_addon(extension_path, temporary=True)
+
+    time.sleep(2)
+
+    driver.switch_to.window(driver.window_handles[0])
+
+
     elespectador()
     driver.quit()
 except Exception:
